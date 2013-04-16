@@ -1,0 +1,379 @@
+/* Created by http://freehtml5templates.com */
+/* basics */
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+/* render html5 elements as block */
+header, footer, section, aside, nav, article {
+	display: block;
+	}
+
+/* standard body */
+body {
+	margin: 0 auto;
+	width: 960px;
+	font: 14px/20px "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	background: #271408 url("images/escheresque_ste.png") repeat;
+	}
+	
+/* standard alignments */
+.alignleft {
+	float: left;
+	}
+
+img.alignleft {
+	margin: 5px 10px 0 0; 
+	}
+
+.alignright {
+	float: right;
+	}
+
+img.alignright {
+	margin: 5px 0 0 10px; 
+	}
+	
+.center {
+	text-align: center;
+	}
+	
+.fleft {
+	text-align: left;
+	float: left;
+	margin-left: 20px;
+	}
+	
+.fright {
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	}
+	
+.fcentered {
+	text-align: center;
+	}
+
+/* Hx tags */
+
+h1 {
+	font-size: 48px;
+	padding: 20px 0;
+	text-shadow: 2px 2px 2px #000;
+	color: #617C58;
+	}
+
+h2 {
+	font-size: 24px;
+	padding: 20px 0;
+	}
+
+h3 {
+	font-size: 18px;
+	padding: 10px 0;
+	}
+
+p {
+	padding-bottom: 20px;
+	}
+
+/* nav */
+
+nav {
+	position: absolute;
+	width: 960px;
+	background-color: #3C4556;/*url("images/navbg.png");*/
+	
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+
+nav ul {
+	margin: 0 auto;
+	width: 960px;
+	list-style: none;
+	}
+
+nav ul li {
+	float: left;
+	}
+		
+nav ul li a {
+	display: block;
+	margin-right: 20px;
+	width: 140px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	color: #617C58;
+	}
+			
+nav ul li a:hover {
+	color: #89A480;
+	font-weight:900;
+	}
+			
+nav ul li.selected a {
+	color: #7F9A76;
+	font-style:italic;
+	}
+			
+nav ul li.subscribe a {
+	margin-left: 20px;
+	padding-left: 33px;
+	text-align: left;
+	background: url("images/rss.png") left center no-repeat;
+	}
+
+
+
+/* intro */
+
+#intro {
+	position: relative;
+	margin-top: 55px;
+	padding: 50px;
+	background: #283142 url("images/asfalt283142.png") repeat;
+	
+	/* background size */
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-khtml-background-size: 100%;
+
+	
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+	
+#intro h2, #intro p {
+	position: relative;
+	z-index: 9999;
+	width: 350px;
+	}
+	
+#intro h2 {
+	padding: 0 0 20px 0;
+	font-weight: normal;
+	color: #89a480;
+	}	
+#intro p {
+	padding: 0;
+	color: #617c58;
+	}
+	
+#intro a {
+	color: #7d636c;
+	}
+	
+#intro a:hover {
+	color: #a58b94;
+	}
+	
+#intro img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    max-width: 100%;
+    vertical-align: text-top;
+	/*position: absolute;
+	top: 20;
+	right: 20;
+	width: 100%;
+	height: 100%;*/
+	
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+
+/* content and sidebar layout */
+
+#content {
+	position: relative;
+	margin-top: 50px;
+	float: left; 
+	width: 920px; 
+	margin:10px 5px 10px 0; 
+	padding:5px 20px 5px 20px;
+	/*background-color: #617C58;
+	background-image: url("images/wave617c58.png") repeat;*/
+	background: url("images/wave617c58.png") repeat;
+	color: #617c58;
+	
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* columns */
+
+#content ul.column {
+	width: 100%;
+	padding: 0;
+	margin: 10px 0;
+	list-style: none;
+}
+
+#content ul.column li {
+	float: left;
+	width: 230px; /*Set default width*/
+	padding: 0;
+	margin: 5px 0;
+	display: inline;
+}
+
+#content .block {
+	height: 355px;
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px; /*Creates the 10px gap between each column*/
+	padding: 20px;
+	background: #283142 url("images/asfalt283142.png") repeat;
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content .block a {
+	color: #7d636c;
+	}
+	
+#content .block img {
+  /*Flexible image size with border*/
+	width: 89%;  /*Took 1% off of the width to prevent IE6 bug*/
+	padding: 5%;
+	background:#fff;
+	margin: 0 auto;
+	display: block;
+	-ms-interpolation-mode: bicubic; /*prevents image pixelation IE 6/7 */
+	}
+/* end of column configuration */
+	
+/* footer */
+footer {
+	width: 960px;
+	clear: both;
+	color: #617c58;
+	overflow: hidden;
+	padding-top: 10px;
+	/*background-color: #283142;*/
+	background: url("images/asfalt283142.png") repeat;
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	height: 200px;
+	margin-bottom: 10px;
+	}
+	
+footer section {
+width: 300px;
+float: left;
+padding: 0 10px;
+}
+
+footer section h2 {
+margin-top: 0;
+color:#89a480;
+}
+
+footer section p {
+  font-size: 12px;
+	}
+
+footer section a {
+	color: #7d636c;
+	}
+	
+footer section a:hover {
+	color: #a58b94;
+	text-decoration: none;
+	}
+	
+/* for inner pages */
+
+/* content and sidebar layout */
+
+#innercontent {
+	float: left; 
+	width: 300px; 
+	margin:10px 5px 10px 0; 
+	padding:5px 20px 5px 20px;
+	/*background-color: #617c58;*/
+	background: url("images/asfalt283142.png") repeat;
+	
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+aside {
+	float: right;
+	text-align: left; 
+	width: 300px; 
+	margin:0; 
+	padding:0;
+	}
+
+/* article */
+.articlecontent header p, .blogPost header p a {
+	font-size: 14px;
+	font-style: italic;
+	color: #617c58;
+	}
+
+.articlecontent p a {
+	color: #70636c;
+	}
+	
+.articlecontent p a:hover {
+	color: #a58b94;
+	}
+	
+.articlecontent header p a:hover {
+	text-decoration: none;
+	color: #89a480;
+	}
+	
+/* box shadow on pics */
+.articlecontent img {
+	-webkit-box-shadow: 3px 3px 7px #777;
+	}
+
+/* sidebar */
+aside section {
+	margin: 10px 0 0 10px;
+	padding: 10px 15px;
+	background-color: #617C58;
+	
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+
+aside section ul {
+	margin: 0 0 0 20px;
+	color: #FFF;
+	}
+	
+aside section ul li a {
+	display: block;
+	text-decoration: none;
+	color: #646D7E;
+	}
+		
+aside section ul li a:hover {
+	text-decoration: underline;
+	color: #fff;
+	}
+	
+

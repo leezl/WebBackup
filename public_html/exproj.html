@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Liesl Wigand: Computer Scientist, Graduate Student</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
+<script type="text/javascript" src="js/equalcolumns.js"></script> 
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+	<header>
+		<h1>Liesl Wigand: Person In Progress</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li class="selected"><a href="#">Projects</a></li>
+			<li><a href="resumepg.html">Resum&eacute;</a></li>
+			<li><a href="fun.html">Fun</a></li>
+		</ul>
+	</nav>
+	<section id="intro">
+		<header>
+			<h2>Exciting Projects</h2>
+		</header>
+		<p> This section will be about projects I've worked on. Again, incomplete, and mostly blank with broken links. </p>
+		<!--<img src="images/introimage.png" alt="lime" />-->
+	</section>
+	
+	<section id="content">
+				<ul class="column">
+				    <!--eqblock-->
+				    <li>
+				        <section class="block">
+									<a href="#"><img src="images/1-thumb.jpg" alt=""  /></a> 
+										<h2><a href="#MachineLearning">Attribute Recognition</a></h2> 
+										<p> A machine learning project for identifying simple visible features based on natural language labels. </p> 
+				        </section>
+				    </li>
+				 </ul>
+				 <ul class="column">
+				    <!--eqblock-->
+				    <li>
+				        <section class="block">
+									<a href="#"><img src="images/2-thumb.jpg" alt=""  /></a> 
+										<h2><a href="#NGrams"> DTW on Google N-Grams </a></h2> 
+										<p> Natural Language processing and a dab of culturomics using Google's N-Gram data. </p> 
+				        </section>
+				    </li>
+
+				    <!--eqblock-->
+				    <li>
+				        <section class="block">
+									<a href="#"><img src="images/6-thumb.jpg" alt=""  /></a> 
+										<h2><a href="#"> Qt and OpenGl simulation </a></h2> 
+										<p>  </p> 
+				        </section>
+				    </li>
+
+				    <!--eqblock-->
+				    <li>
+				        <section class="block">
+									<a href="#"><img src="images/3-thumb.jpg" alt=""  /></a> 
+										<h2><a href="#"> Networks for Intent Recognition </a></h2> 
+										<p>  </p> 
+				        </section>
+				    </li>
+				</ul>
+		</section>
+		    
+    <section id="content">
+        <a name="MachineLearning"></a>
+        <section class="block">
+        <h2>Machine Learning for Attribute Recognition</h2> 
+        In my work for my advisor in the robotics lab I am researching methods for learning attributes in images that are directly connected to words. That is, when given images that contain features like 'red', 'round', 'big', or 'shiny', I'd like to be able to automatically identify those traits. So it is related to feature extraction on images, but we are forcing the extracted features to represent traits that are human-understandable. We are currently using a combination of supervised and unsupervised learning techniques, both standard and recently developed in order to accomplish this goal. 
+        </section>
+    </section>
+    
+    <section id="content">
+        <a name="NGrams"></a>
+        <section class="block">
+        <h2>DTW on Google N-Grams</h2> 
+        A few semesters ago I took a Coursera class on Natural Language Processing, and implemented a very simple algorithm on Google N-Grams. <a href="http://books.google.com/ngrams/">Google N-Grams</a> are a collection of scanned natural language documents such as books, newspapers, and legal records which have been scanned and documented into an n-grams. That is, for each word, the number of occurences overall and in each book, on each page, and per year have been counted, as well as for pairs, triples and quads of words. This has been shown to be a useful for many purposes. For example, documents are often labeled according to word occurences, and searches are based off of these labels. My project was attempting to show that important events could be described by finding associated words in the dataset. So given the phrase "World War" we would find that it peaks after 1950, and using this peak we can find words that peaked at the same time, to fidn related events and people, for example "soldier" and "ration." Using these words we could recreate blurbs about the events using standard sentence generation based around these words. Unfortunately I have not continued the project, and it needed improved database use, and speed improvements to run across so many words.
+        </section>
+        
+        <section id="content">
+        <a name="Ship Sim"></a>
+        <section class="block">
+        <h2>Ship Simulator</h2> 
+        As a project for class my team built a ship simulator. The first was made using python Ogre for a game design class, the second was made usign Qt and OpenGl for a graphics class. Python Ogre provided many existing tools for quickly adding in sky boxes or spheres, as well as water and islands. However there were issues with config file pathing, especially when working on several machines. For the graphics class we attempted to handle that difficulty using Qt. We ended up hand coding many of the features already available in Python Ogre, and had trouble using OpenGl in Qt. If I can find my old code for either system I will make it available.
+        </section>
+    </section>
+    </section>
+		
+	<footer>
+    <section>
+    <h3>Hosted by:</h3>
+    <p><a href="http://cse.unr.edu">University of Nevada Reno Computer Science Department. <p>&copy; 2010 <a href="http://www.cse.unr.edu/~lieslw/" title="Liesl Wigand">http://www.cse.unr.edu/~lieslw/.com</a> All rights reserved.</p></a></p>
+    </section>
+    
+    <section>
+    <h3>Built with:</h3>
+    <p>Standard HTML, and some bootstrap features.</p>
+    </section>
+    
+    <section>
+    <h3>Images from:</h3>
+    <p>Also: Art by various deviantart Artists: <a href="http://kutsche.deviantart.com/">Selfillumination, by Kutsche</a>; <a href="http://thompson46.deviantart.com">It's my Flower, by Thompson</a>; <a href="http://randis.deviantart.com">GOLEM - toys and magic, by ~randis</a>; <a href="http://jujika.deviantart.com">The Workstation2, by ~Jujika</a>; <a href="http://oddocean.deviantart.com">Warm, by ~oddocean</a>; <a href="http://freaky665.deviantart.com">Lust for Love, by *freaky665</a>; <a href="http://begemott.deviantart.com">the exchange of flowers-color, by *begemott</a> <!--:Saved:images/5-thumb.jpg, images/7-thumb.jpg--> </p>
+    </section>
+
+	</footer>
+<!-- Free template created by http://freehtml5templates.com -->
+</body>
+</html>
